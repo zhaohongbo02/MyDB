@@ -13,36 +13,36 @@ make
 ```
 ## 使用示例
 ``` sql
-// 创建数据库
+-- 创建数据库
 CREATE DATABASE TEST;
-// 查看数据库
+-- 查看数据库
 SHOW DATABASES;
-// 使用数据库
+-- 使用数据库
 USE TEST;
-// 创建表格
+-- 创建表格
 CREATE TABLE STUDENT (S_ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, HEIGHT FLOAT);
-// 查看数据库中的表格
+-- 查看数据库中的表格
 SHOW TABLES;
-// 显示数据表的详细信息
+-- 显示数据表的详细信息
 DESC STUDENT;
-// 向表格中插入数据
+-- 向表格中插入数据
 INSERT INTO STUDENT VALUES (0, 'ZHANG SAN', 18, 170.0), (1, 'LI SI', 19, 165.0), (2, 'XIAO MING', 20, 185.5);
-// 删除表格中的数据
+-- 删除表格中的数据
 DELETE FROM STUDENT WHERE S_ID = 0;
-// 更新表格中的数据
+-- 更新表格中的数据
 UPDATE STUDENT SET NAME = 'WANG WU' WHERE NAME = 'LI SI';
-// 查询数据
+-- 查询数据
 SELECT * FROM STUDENT;
 SELECT * FROM STUDENT WHERE HEIGHT > 170;
-// 删除主键
+-- 删除主键
 ALTER TABLE STUDENT DROP PRIMARY KEY (S_ID);
-// 设置主键
+-- 设置主键
 ALTER TABLE STUDENT ADD CONSTRAINT PRIMARY KEY (S_ID);
-// 删除表格
+-- 删除表格
 DROP TABLE STUDENT;
-// 删除数据库
+-- 删除数据库
 DROP DATABASE TEST;
-// 退出程序
+-- 退出程序
 QUIT;
 ```
 
